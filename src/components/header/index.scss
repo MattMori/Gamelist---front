@@ -1,0 +1,47 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url('../src/assets/universe1.jpg');
+
+  
+    h1 {
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      text-decoration: none;
+    }
+  
+    input {
+      padding: 0.5rem 2rem;
+      border-radius: 15px;
+      border: none;
+      color: #000000;
+    }
+  
+    input:focus {
+      border: none;
+      outline: none;
+    }
+
+  }
+
+  .btn-header{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: solid 2px #000000;
+    
+    &:hover {
+      background-color: #303030;
+      color: white;
+      border: solid 2px rgb(255, 255, 255);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    }
+  }

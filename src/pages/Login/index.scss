@@ -1,0 +1,80 @@
+.Login {
+
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #00000067;
+    border: 2px solid white;
+    display: flex;
+    max-height: fit-content;
+    max-width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    &__form {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+
+    h2 {
+
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    label {
+        text-align: left;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin-top: 84px;
+    }
+
+    &__input-name {
+        margin-bottom: 19px;
+    }
+
+    input {
+        height: 52px;
+        padding: 18px 13px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .btn {
+        
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 5px 10%;
+        border-radius: 18px;
+        border: none;
+        font-size: 20px;
+        font-weight: lighter;
+        text-decoration: none;
+        border: solid 2px #000000;
+
+        &:hover {
+            background-color: #303030;
+            color: white;
+            border: solid 2px rgb(255, 255, 255);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
