@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Home from "./pages/Home/Home.jsx";
 import Login from "./pages/Login/Login.jsx";
 import './index.scss';
-import GameDetail from "./pages/GameDetail/gameDetail";
+import GameDetail from "./pages/GameDetail/GameDetail";
  function App() {
   const [searchValue, setSearchValue] = useState("");
 
