@@ -61,3 +61,10 @@
 .btn-details {
   color: transparent;
 }
+
+@media only screen and (max-width: 600px) {
+  .GameCard {
+    width: 95%;
+    }
+
+}
