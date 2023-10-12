@@ -99,6 +99,8 @@
     border-radius: 10px;
     padding: 8px;
     background-color: #00000085;
+    max-width: 100%;
+
 }
 
 .inputComments {
@@ -171,4 +173,18 @@ input:focus {
             align-items: center;
             max-width: 100%;
         }
-    }}
+    }
+    .inputComments {
+        text-align: center;
+    
+        &__name {
+            max-width: 100%;
+        }
+    
+    
+        &__text {
+            max-width: 100%;
+        }
+    
+    }
+}
