@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000"; // A URL base do seu servidor local
+const BASE_URL = "https://game-list-back.vercel.app"; // A URL base do seu servidor local
 
 const withBaseUrl = (path) => `${BASE_URL}${path}`;
 
