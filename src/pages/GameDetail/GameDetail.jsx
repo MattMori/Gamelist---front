@@ -13,6 +13,7 @@ const GameDetail = () => {
   const [commentName, setCommentName] = useState("");
   const [commentAdded, setCommentAdded] = useState(false);
   const [comments, setComments] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function getGame() {
     try {
@@ -78,6 +79,20 @@ const GameDetail = () => {
     return DOMPurify.sanitize(dirtyHTML);
   };
 
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await GameService.getGameDetails(id);
+        setGame(response.data.jogo || {});
+      } catch (error) {
+        console.error('Erro ao obter detalhes do jogo:', error);
+      } finally {
+        setLoading(false); // Oculta a tela de carregamento, independentemente do resultado da requisição
+      }
+    }
+  
+    fetchData();
+  }, [id]);
 
   return (
     <div className="GameDetail">
@@ -148,6 +163,7 @@ const GameDetail = () => {
           </div>
         </div>
       </div>
+      {loading && <div className="loader">Carregando...</div>}
     </div>
   );
 };
