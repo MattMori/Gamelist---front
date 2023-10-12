@@ -3,30 +3,34 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-image: url('../src/assets/universe1.jpg');
+    
+    background-image: url('../src/assets/universe.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px white;
 
-  
     h1 {
-      color: rgb(255, 255, 255);
-      display: inline-block;
-      text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        text-decoration: none;
     }
-  
+
     input {
-      padding: 0.5rem 2rem;
-      border-radius: 15px;
-      border: none;
-      color: #000000;
+        padding: 0.5rem 2rem;
+        border-radius: 15px;
+        border: none;
+        color: #000000;
     }
-  
+
     input:focus {
-      border: none;
-      outline: none;
+        border: none;
+        outline: none;
     }
 
-  }
+}
 
-  .btn-header{
+.btn-header {
     margin: 10px;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -37,11 +41,11 @@
     font-weight: lighter;
     text-decoration: none;
     border: solid 2px #000000;
-    
+
     &:hover {
-      background-color: #303030;
-      color: white;
-      border: solid 2px rgb(255, 255, 255);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        background-color: #303030;
+        color: white;
+        border: solid 2px rgb(255, 255, 255);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
     }
-  }
+}

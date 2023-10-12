@@ -1,7 +1,6 @@
 .GameCard {
   width: 500px;
   height: 400px;
-  /* Altura fixa para todos os cartões */
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -10,7 +9,7 @@
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.671);
+    box-shadow: 0 8px 12px rgb(0, 0, 0);
     transform: translateY(-5px);
 
   }

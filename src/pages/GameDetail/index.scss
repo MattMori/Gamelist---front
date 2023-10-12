@@ -1,154 +1,157 @@
 .GameDetail {
-  color: white;
-  background-image: url('../src/assets/universe1.jpg');
-  padding: 40px 0;
+    color: white;
+    background-image: url('../src/assets/universe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
 
-  &__container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &__container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-  &__col {
-    flex: 1;
-    margin: 0 10px;
-  }
+    &__col {
+        flex: 1;
+        margin: 0 10px;
+    }
 
-  &__title {
-    font-size: 48px;
-    margin: 20px;
-    text-align: center;
-
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-    text-align: center;
-
-    img {
-
-      border-radius: 0.5rem;
-      max-width: 100%;
-      border: solid 2px rgb(255, 255, 255);
-      box-shadow: 0 5px 6px rgb(0, 0, 0);
+    &__title {
+        font-size: 48px;
+        margin: 20px;
+        text-align: center;
 
     }
-  }
 
-  &__details {
-    font-size: 24px;
-    margin-bottom: 30px;
+    &__image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        text-align: center;
 
-  }
+        img {
 
-  &__detail {
+            border-radius: 0.5rem;
+            max-width: 100%;
+            border: solid 2px rgb(255, 255, 255);
+            box-shadow: 0 5px 6px rgb(0, 0, 0);
+
+        }
+    }
+
+    &__details {
+        font-size: 24px;
+        margin-bottom: 30px;
+
+    }
+
+    &__detail {
+        margin-bottom: 10px;
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: #00000085;
+
+        a {
+            color: rgb(139, 0, 139);
+        }
+
+        span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    }
+
+    &__button {
+        margin-left: 12.7%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 15px 30px;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        border: solid 2px #000000;
+
+
+        &:hover {
+            background-color: #303030;
+            color: white;
+            border: solid 2px rgb(255, 255, 255);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+}
+
+.comments {
     margin-bottom: 10px;
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 10px;
     padding: 8px;
     background-color: #00000085;
-
-    a {
-      color: rgb(139, 0, 139);
-    }
-
-    span {
-      font-weight: bold;
-      margin-right: 10px;
-    }
-  }
-
-  &__button {
-    margin-left: 12.7%;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 15px 30px;
-    border-radius: 15px;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border: solid 2px #000000;
-
-
-    &:hover {
-      background-color: #303030;
-      color: white;
-      border: solid 2px rgb(255, 255, 255);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
-    }
-  }
-
-}
-
-.comments {
-  margin-bottom: 10px;
-  border: solid rgb(255, 255, 255) 1px;
-  border-radius: 10px;
-  padding: 8px;
-  background-color: #00000085;
 }
 
 .inputComments {
-  text-align: center;
+    text-align: center;
 
-  label {
-    margin: 12px;
-  }
+    label {
+        margin: 12px;
+    }
 
-  &__name {
-    padding-left: 10px;
-    width: 1300px;
-    min-height: 30px;
-    border-radius: 5px;
-    border: none;
-    color: #000000;
-    margin: 10px;
-  }
+    &__name {
+        padding-left: 10px;
+        width: 1300px;
+        min-height: 30px;
+        border-radius: 5px;
+        border: none;
+        color: #000000;
+        margin: 10px;
+    }
 
 
-  &__text {
-    padding-left: 10px;
-    width: 1300px;
-    min-height: 30px;
-    max-height: 200px;
-    border-radius: 5px;
-    border: none;
-    color: #000000;
-    margin: 10px;
-  }
+    &__text {
+        padding-left: 10px;
+        width: 1300px;
+        min-height: 30px;
+        max-height: 200px;
+        border-radius: 5px;
+        border: none;
+        color: #000000;
+        margin: 10px;
+    }
 
 }
 
 input:focus {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
 }
 
 .btn {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  padding: 5px 10%;
-  border-radius: 18px;
-  border: none;
-  font-size: 20px;
-  font-weight: lighter;
-  text-decoration: none;
-  border: solid 2px #000000;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10%;
+    border-radius: 18px;
+    border: none;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: solid 2px #000000;
 
-  &:hover {
-    background-color: #303030;
-    color: white;
-    border: solid 2px rgb(255, 255, 255);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
-  }
+    &:hover {
+        background-color: #303030;
+        color: white;
+        border: solid 2px rgb(255, 255, 255);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    }
 }
